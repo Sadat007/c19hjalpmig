@@ -18,3 +18,5 @@ Our intention is to connect people, further our values in society, and help go o
 
 Our website, *C-19 Hjälp mig*, exists to generate a greater sense of community, allowing people to be kind and support each other at a time when cooperation is so necessary, but also to allow those in need to remain in a shelter to be safe.
 
+
+
