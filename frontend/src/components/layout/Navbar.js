@@ -28,6 +28,12 @@ function Navbar({onLogout}) {
                                 Chat
                             </Link>
                         </li>
+
+                        <li className="nav-item">
+                            <Link to="/about" className="nav-link">
+                                About
+                            </Link>
+                        </li>
                 </ul>
 
                 <button className="btn btn-outline-info my-2 my-sm-0" onClick={onLogout}>Logout</button>
