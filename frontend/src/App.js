@@ -25,7 +25,7 @@ function App() {
             <Router>
                 <Navbar onLogout={() => Auth.logout()} />
 
-                <div className="container mt-5">
+                <div className="container m-0 p-0" style={{ maxWidth:"none"}}>
                     <Switch>
                         <Route path="/posts">
                             <PostsPage/>
