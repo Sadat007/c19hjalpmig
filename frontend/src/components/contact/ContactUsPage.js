@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import './contactus.css';
-import contactImg from "../../images/contact_us.jpg";
 
 class ContactUsPage extends Component{
     render() {
@@ -38,4 +36,4 @@ class ContactUsPage extends Component{
      }
 }
 
-export default ContactUsPage;
+//export default ContactUsPage;
