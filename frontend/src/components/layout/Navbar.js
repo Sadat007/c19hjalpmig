@@ -37,6 +37,15 @@ function Navbar({ onLogout }) {
                             </Link>
                         </li>
 
+
+                        <li className="nav-item">
+                            <Link to="/about" className="nav-link">
+                                About
+                            </Link>
+                        </li>
+                </ul>
+
+
                         <li className="nav-item">
                             <Link to="/singin" className="nav-link">
                                 Sing in
