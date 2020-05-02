@@ -87,3 +87,13 @@ h1.title{
 	word-spacing: 25px;
 	letter-spacing: 5px;
 }
+
+h3.title{
+	margin-bottom: 20px;
+	color: #444444;
+  text-transform: uppercase;
+  text-align: center;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
