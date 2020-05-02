@@ -44,9 +44,9 @@ class HomePage extends Component {
                     <div className="col-md-6 col-lg-4 my-1">
                         <div className="card mt-5">
                             <img src={homePageCard2} alt="aaa" className="card-img-top"></img>
-                            <div className="card-body">
+                            <div className="card-body" style={{height: "175px"}}>
                                 <h5 className="card-titel text-capitalize text-info">help others</h5>
-                                <p className= "card-text">Be a volunteer to Help people who are in need.</p>
+                                <p className= "card-text">Be a volunteer to Help people who are in need. </p>
                                 <button className="btn btn-outline-info text-uppercase">view more</button>
                             </div>     
                         </div>
