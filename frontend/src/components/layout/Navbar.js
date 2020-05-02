@@ -34,9 +34,6 @@ function Navbar({ onLogout }) {
                                 News
                             </Link>
                         </li>
-                </ul>
-
-                    <ul>
                         <li className="nav-item">
                             <Link to="/singin" className="nav-link">
                                 Sing in
