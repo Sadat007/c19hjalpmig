@@ -53,7 +53,8 @@ function App() {
             </Router>
   );
 
-  return (loggedIn ? loggedInRouter : <LoginPage/>);
+  return ( loggedInRouter);
+//   return (loggedIn ? loggedInRouter : <HomePage/>);
 }
 
 export default App;

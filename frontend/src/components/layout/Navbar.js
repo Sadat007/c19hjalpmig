@@ -5,11 +5,9 @@ import logo from "../../images/logo123.png";
 function Navbar({ onLogout }) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-           
-            
             <div >
                 <a href="#"><img src={logo} style={{width: "70px", height: "70px", padding: "20px;"}} /></a>
-                <a className="navbar-brand" href="#">Hjälp mig</a>
+                <a className="navbar-brand" href="#" style={{fontSize: "14px"}}>mig</a>
 		    </div>
 
                 <div className="collapse navbar-collapse" id="navbarColor01"  >
