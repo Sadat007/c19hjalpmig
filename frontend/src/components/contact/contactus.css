@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+ .contactApp {
+    max-width: none;
+     
+}
+.contactBanner{
+    width: 220vmin;
+    height: 20vmin;
+}
+.contactForm{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 20px;
+}
+ p {
+     text-align: left;
+     font-weight: 500;
+     font-size: 20px;
+ }
+.contactMsg{
+    font-size: 15px;
+    color: grey;
+}
+ input[type=text],input[type=email], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+     
+}
+
+ input[type=submit] {
+     background-color: rgb(22, 147, 189)  ;
+     color: white;
+     padding: 12px 20px;
+     margin-top: 5px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ input[type=submit]:hover {
+     background-color: rgb(22, 147, 189) ;
+}
+.subject {
+    height : 70px;
+}
+.msg{
+    height: 100px;
+}
+ .container {
+     border-radius: 5px;
+     background-color: #a79f9f;
+     padding: 20px;
+}
+
