@@ -36,7 +36,7 @@ function App() {
                             <ChatPage/>
                         </Route>
 
-                        <Route path="/">
+                        <Route exact path="/">
                           <HomePage/>
                         </Route>
 
