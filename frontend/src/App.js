@@ -17,6 +17,7 @@ import HomePage from './components/home/HomePage';
 import PostsPage from "./components/posts/PostsPage";
 import ChatPage from './components/chat/ChatPage';
 import AboutPage from './components/about/AboutPage';
+import NewsPage from "./components/news/NewsPage";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(Auth.isLoggedIn());
@@ -26,7 +27,7 @@ function App() {
             <Router>
                 <Navbar onLogout={() => Auth.logout()} />
 
-                <div className="container mt-5">
+                <div className="container m-0 p-0" style={{ maxWidth:"none"}}>
                     <Switch>
                         <Route path="/posts">
                             <PostsPage/>
@@ -42,6 +43,10 @@ function App() {
 
                         <Route path="/">
                           <HomePage/>
+                        </Route>
+
+                        <Route path="/news">
+                          <NewsPage/>
                         </Route>
                     </Switch>
                 </div>

@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo123.png";
 
-function Navbar({onLogout}) {
+function Navbar({ onLogout }) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="#">SDA starter</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+           
+            
+            <div >
+                <a href="#"><img src={logo} style={{width: "70px", height: "70px", padding: "20px;"}} /></a>
+                <a className="navbar-brand" href="#">Hjälp mig</a>
+		    </div>
 
-            <div className="collapse navbar-collapse" id="navbarColor01">
-                <ul className="navbar-nav mr-auto">
+                <div className="collapse navbar-collapse" id="navbarColor01"  >
+                    <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">
                                 Home
@@ -18,16 +21,22 @@ function Navbar({onLogout}) {
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/posts" className="nav-link">
-                                Posts
+                            <Link to="/aboutus" className="nav-link">
+                                About us
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/contact" className="nav-link">
+                                Contact
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/chat" className="nav-link">
-                                Chat
+                            <Link to="/news" className="nav-link">
+                                News
                             </Link>
                         </li>
+
 
                         <li className="nav-item">
                             <Link to="/about" className="nav-link">
@@ -36,10 +45,16 @@ function Navbar({onLogout}) {
                         </li>
                 </ul>
 
-                <button className="btn btn-outline-info my-2 my-sm-0" onClick={onLogout}>Logout</button>
-            </div>
-        </nav>
-    );
-}
 
+                        <li className="nav-item">
+                            <Link to="/singin" className="nav-link">
+                                Sing in
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+            );
+        }
+        
 export default Navbar;
