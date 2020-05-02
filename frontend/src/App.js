@@ -16,6 +16,7 @@ import LoginPage from "./components/auth/LoginPage";
 import HomePage from './components/home/HomePage';
 import PostsPage from "./components/posts/PostsPage";
 import ChatPage from './components/chat/ChatPage';
+import AboutPage from './components/about/AboutPage';
 import NewsPage from "./components/news/NewsPage";
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
                             <ChatPage/>
                         </Route>
 
+                        <Route path="/aboutus">
+                            <AboutPage/>
+                        </Route>
+
                         <Route exact path="/">
                           <HomePage/>
                         </Route>
@@ -48,7 +53,8 @@ function App() {
             </Router>
   );
 
-  return (loggedIn ? loggedInRouter : <LoginPage/>);
+  return ( loggedInRouter);
+//   return (loggedIn ? loggedInRouter : <HomePage/>);
 }
 
 export default App;

@@ -3,6 +3,8 @@ import Footer from "../footer/FooterPage";
 import homePageCard1 from './../../images/homePageCard1.jpeg';
 import homePageCard2 from './../../images/homePageCard2.jpeg';
 import homePageCard3 from './../../images/homePageCard3.jpeg';
+
+
 import './home.css';
 
 class HomePage extends Component {
@@ -19,9 +21,9 @@ class HomePage extends Component {
                                     greater sense of community, allowing people to be kind and 
                                     support each other at a time when cooperation
                                     is so necessary, but also to allow those 
-                                    in need to remain in a shelter to be safe </p>
+                                    in need to remain in a shelter to be safe. </p>
 
-                                <p> We cant help everyone but everyone can help someone</p>
+                                <p> We can't help everyone but everyone can help someone.</p>
                                 <button className="btn btn-outline-info text-uppercase">signup here</button>
                             </div>
                         </div>
