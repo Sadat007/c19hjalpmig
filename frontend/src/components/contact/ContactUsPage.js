@@ -7,8 +7,9 @@ class ContactUsPage extends Component{
         return(
           <div className="contactApp">
             <div className="contactBanner">
-            <img src={contactImg} style={{width:"100%", height: "100%", padding: "10px;",media:"(min-width: 350px)"}} />
+              <img src={contactImg} style={{width:"100%", height: "100%", padding: "10px;",media:"(min-width: 350px)"}} />
             </div>
+            
             <div className = "contactForm">
             <p className = "contact">Get in touch with Us</p>
             
