@@ -17,6 +17,7 @@ import HomePage from './components/home/HomePage';
 import PostsPage from "./components/posts/PostsPage";
 import ChatPage from './components/chat/ChatPage';
 import NewsPage from "./components/news/NewsPage";
+import ContactUsPage from "./components/contact/ContactUsPage";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(Auth.isLoggedIn());
@@ -28,27 +29,28 @@ function App() {
 
                 <div className="container m-0 p-0" style={{ maxWidth:"none"}}>
                     <Switch>
-                        <Route path="/posts">
-                            <PostsPage/>
-                        </Route>
+                      <Route exact path="/"> 
+                        <HomePage/>
+                      </Route>
 
-                        <Route path="/chat">
-                            <ChatPage/>
-                        </Route>
+                      <Route path="/posts">
+                        <PostsPage/>
+                      </Route>
 
-                        <Route path="/">
-                          <HomePage/>
-                        </Route>
+                      <Route path="/chat">
+                        <ChatPage/>
+                      </Route>
 
-                        <Route path="/news">
-                          <NewsPage/>
-                        </Route>
-                    </Switch>
+                      <Route path="/news">
+                        <NewsPage/>
+                      </Route>
+                   </Switch> 
                 </div>
             </Router>
   );
+  return loggedInRouter;
 
-  return (loggedIn ? loggedInRouter : <LoginPage/>);
+  //return (loggedIn ? loggedInRouter : <LoginPage/>);
 }
 
 export default App;
